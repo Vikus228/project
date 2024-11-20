@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import Header from './components/HeaderComponent/header';
-import Footer from './components/FooterComponent/footer';
-import CardList from './components/content/cardList';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import CardList from './components/CardList/CardList';
 
 const words = [
   { "word": "Star",

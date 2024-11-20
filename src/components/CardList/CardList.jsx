@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../CardComponent/card";
+import Card from "../Card/Card";
 import PropTypes from 'prop-types';
 
 function CardList({ words }) {
