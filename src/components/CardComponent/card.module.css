@@ -1,0 +1,7 @@
+.cardWord {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px #7d2e5d;
+  border-radius: 3%;
+}/*# sourceMappingURL=card.module.css.map */
