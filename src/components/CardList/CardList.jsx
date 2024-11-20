@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "../Card/Card"
 import PropTypes from 'prop-types';
 
-function CardList({ words }) {
+export default function CardList({ words }) {
     return(
         <>
             {words.map((item, index) => {
@@ -30,5 +30,3 @@ CardList.propTypes = {
         })
     ).isRequired,
 };
-
-export default CardList;

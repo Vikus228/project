@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import CardList from './components/CardList/CardList';
+import List from "./components/list/List";
+
 
 const words = [
   { "word": "Star",
@@ -26,9 +28,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>
-        <CardList words={words} />
-      </div>
+      <CardList words={words} />
+      <List words={words} />
       <Footer />
     </div>
   );
