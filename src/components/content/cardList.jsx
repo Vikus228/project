@@ -12,6 +12,7 @@ function CardList({ words }) {
                                 word={item.word}
                                 transcription={item.transcription}
                                 translation={item.translation}
+                                topic={item.topic}
                         />
                     )
                 })}
@@ -25,6 +26,7 @@ CardList.propTypes = {
             word: PropTypes.string.isRequired,
             transcription: PropTypes.string.isRequired,
             translation: PropTypes.string.isRequired,
+            topic: PropTypes.string.isRequired,
         })
     ).isRequired,
 };

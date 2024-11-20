@@ -1,7 +1,37 @@
-.cardWord {
+.card {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  border: 1px #7d2e5d;
-  border-radius: 3%;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  border: 1px solid #7d2e5d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.word {
+  font-size: 2.5em;
+  margin: 10px;
+  color: #7d2e5d;
+}
+
+.wordOptions {
+  font-size: 1.2em;
+  color: #7d2e5d;
+  margin: 5px;
+}
+
+.topic {
+  font-size: 1.2em;
+  color: #7d2e5d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffbff6;
+  padding: 5px 10px;
+  border-bottom-right-radius: 10px;
 }/*# sourceMappingURL=card.module.css.map */

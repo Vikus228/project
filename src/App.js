@@ -7,21 +7,26 @@ import CardList from './components/content/cardList';
 const words = [
   { "word": "Star",
     "transcription": "/stɑːr/",
-    "translation": "Звезда"
+    "translation": "Звезда",
+    "topic": "Космос"
   },
   { "word": "Moon",
     "transcription": "/muːn/",
-    "translation": "Луна"},
+    "translation": "Луна",
+    "topic": "Космос"
+},
   { "word": "Galaxy",
     "transcription": "/ˈɡæləksi/",
-    "translation": "Галактика"},
+    "translation": "Галактика",
+    "topic": "Космос"
+  },
 ];
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div className='cards'>
+      <div>
         <CardList words={words} />
       </div>
       <Footer />
