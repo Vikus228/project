@@ -1,10 +1,12 @@
 import React from "react";
 import Card from "../Card/Card"
 import PropTypes from 'prop-types';
+import styles from "./cardList.module.css";
 
 export default function CardList({ words }) {
     return(
         <>
+            <div className={styles.cardList}>
             {words.map((item, index) => {
                     return ( 
                         <Card
@@ -16,6 +18,7 @@ export default function CardList({ words }) {
                         />
                     )
                 })}
+            </div>
         </>
     );
 };

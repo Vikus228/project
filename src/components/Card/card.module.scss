@@ -5,12 +5,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 30vw;
+  height: 30vh;
   border: 1px solid $secondary-color;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin: 10px auto; 
+  margin: 10px;
   position: relative;
   overflow: hidden; 
 }
@@ -24,7 +25,7 @@
 .wordOptions {
   font-size: $base-font-size;
   color: $secondary-color;
-  margin: 5px;
+  margin: 10px;
 }
 
 .topic {
@@ -36,4 +37,20 @@
   background-color: $background-color; 
   padding: 5px 10px; 
   border-bottom-right-radius: 10px; 
+}
+
+.btn {
+  color: white;
+  background-color: $secondary-color;
+  padding: 8px 16px;
+  border: 2px solid $secondary-color;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: $secondary-color;
 }

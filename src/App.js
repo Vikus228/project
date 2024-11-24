@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import CardList from './components/CardList/CardList';
 import List from "./components/list/List";
+import Game from "./components/Game/Game";
 
 
 const words = [
@@ -30,6 +31,7 @@ function App() {
       <Header />
       <CardList words={words} />
       <List words={words} />
+      <Game words={words} />
       <Footer />
     </div>
   );

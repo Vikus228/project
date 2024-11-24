@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 30vw;
+  height: 30vh;
   border: 1px solid #7d2e5d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin: 10px auto;
+  margin: 10px;
   position: relative;
   overflow: hidden;
 }
@@ -22,7 +23,7 @@
 .wordOptions {
   font-size: 1.2em;
   color: #7d2e5d;
-  margin: 5px;
+  margin: 10px;
 }
 
 .topic {
@@ -34,4 +35,22 @@
   background-color: #ffbff6;
   padding: 5px 10px;
   border-bottom-right-radius: 10px;
-}/*# sourceMappingURL=card.module.css.map */
+}
+
+.btn {
+  color: white;
+  background-color: #7d2e5d;
+  padding: 8px 16px;
+  border: 2px solid #7d2e5d;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #7d2e5d;
+}
+
+/*# sourceMappingURL=card.module.css.map */
