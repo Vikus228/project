@@ -1,8 +1,11 @@
+@charset "UTF-8";
 .Game {
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  margin-bottom: 10%;
+  height: 60vh; /* Занимает всю высоту экрана */
+  width: 100%; /* Занимает всю ширину экрана */
 }
 
 .btn {

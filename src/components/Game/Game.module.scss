@@ -2,23 +2,25 @@
 
 .Game {
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  margin-bottom: 10%;
+  height: 60vh; /* Занимает всю высоту экрана */
+  width: 100%; /* Занимает всю ширину экрана */
 }
 
-  .btn {
-    color: white;
-    background-color: $secondary-color;
-    padding: 8px 16px;
-    border: 2px solid $secondary-color;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
+.btn {
+  color: white;
+  background-color: $secondary-color;
+  padding: 8px 16px;
+  border: 2px solid $secondary-color;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  .btn:hover {
-    background-color: white;
-    color: $secondary-color;
-  }
+.btn:hover {
+  background-color: white;
+  color: $secondary-color;
+}

@@ -1,47 +1,58 @@
+@charset "UTF-8";
 .header {
+  position: fixed;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 30px;
+  width: 100%;
+  max-width: 100vw; /* Ограничить ширину заголовка */
+  box-sizing: border-box;
+  overflow: hidden;
   background: linear-gradient(135deg, #ff93d4, #7d2e5d);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: white;
 }
 
-.logo {
+.logoContainer {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.logo h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.logo p {
-  margin: 5px 0 20px 0;
-  font-size: 1.2em;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.logo a {
-  margin-right: 10px;
-  color: white;
+.logoLink {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  border: 2px solid white;
-  border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
+  color: inherit;
+  padding: 8px 16px; /* Добавляем отступы для эффекта наведения */
+  border-radius: 20px; /* Скругление углов */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход */
 }
 
-.logo a:hover {
-  background-color: white;
-  color: #7d2e5d;
+.logoLink:hover {
+  background-color: white; /* Эффект при наведении */
+  color: #7d2e5d; /* Эффект при наведении */
+}
+
+.logoLink svg {
+  width: 50px; /* Задайте нужный размер логотипа */
+  height: 50px; /* Задайте нужный размер логотипа */
+  margin-right: 10px; /* Отступ между логотипом и текстом */
+}
+
+.naiming {
+  margin-left: 10px; /* Отступ между логотипом и названием */
+}
+
+.naiming h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.naiming p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .nav ul {
@@ -51,15 +62,15 @@
   display: flex;
 }
 
-li {
+.nav ul li {
   margin-left: 20px;
 }
 
-a {
+.nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.6em;
   padding: 8px 16px;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s;
@@ -68,4 +79,48 @@ a {
 .nav ul li a:hover {
   background-color: white;
   color: #7d2e5d;
-}/*# sourceMappingURL=header.module.css.map */
+}
+
+.account a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.account a:hover {
+  background-color: white;
+  color: #7d2e5d;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px; /* Уменьшаем отступы на маленьких экранах */
+    flex-wrap: wrap; /* Разрешить перенос элементов */
+  }
+  .logoLink {
+    padding: 6px 12px; /* Уменьшаем отступы для эффекта наведения */
+  }
+  .naiming h1 {
+    font-size: 1.2rem; /* Уменьшаем размер заголовка */
+  }
+  .naiming p {
+    font-size: 0.8rem; /* Уменьшаем размер текста */
+  }
+  .nav ul li {
+    margin-left: 10px; /* Уменьшаем отступы между пунктами меню */
+  }
+  .nav ul li a {
+    padding: 6px 12px; /* Уменьшаем отступы кнопок */
+    font-size: 0.9rem; /* Уменьшаем размер шрифта */
+  }
+  .account a {
+    padding: 6px 12px; /* Уменьшаем отступы кнопок */
+    font-size: 0.9rem; /* Уменьшаем размер шрифта */
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */
